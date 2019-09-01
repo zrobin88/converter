@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Materialize and project CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- /Materialize and project CSS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
+
+    <!-- Title + Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Converter</title>
+    <!-- /Title + Favicon -->
+
+
+
+<body >
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Converter</h1>
+                  <p class="lead">Enter a number, selected a unit of measurement, convert!</p>
+                </div>
+              </div>
+ 
+           
+     
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <input type="text" id="userInput">
+            </div>
+            <div class="col-sm-6">
+                <h4 id='result'></h4>
+            </div>
+        </div>
+        <div class="row">
+                <div class="form-group">
+                        <label for="exampleFormControlSelect1">Example select</label>
+                        <select class="form-control" id="exampleFormControlSelect1 fc">
+                          <option id='m'>Mile to Km</option>
+                          <option id ='k'>Km to Mile</option>
+                          <option id='f'>Feet to Meter</option>
+                          <option id='p'>Pound to Kilogram</option>
+                          <option id='o'>Ounce to Gram</option>
+                          <option id='i'>Inch to Cenimeter</option>
+                        </select>
+                      </div>
+        </div>
+        <div class="row">
+          
+                        <button id='convert'>Convert</button>
+          
+        </div>
+
+
+    </div>
+
+
+    <script type="text/javascript" src="converter.js"></script>
+
+</body>
+
+</html>
