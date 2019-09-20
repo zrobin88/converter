@@ -24,14 +24,23 @@ $("#convert").on("click", () => {
      result = input/2.205;
     $("#result").html(result);
     break;
+    case ('Kilogram to Pound'):
+     result = input * 2.205;
+    $("#result").html(result);
+    break;
     case ('Ounce to Gram'):
      result = input*28.35;
+    $("#result").html(result);
+    break;
+    case ('Gram to Ounce'):
+     result = input*0.035274 ;
     $("#result").html(result);
     break;
     case ('Inch to Cenimeter'):
      result = input*2.54;
     $("#result").html(result);
     break;
+    
   }
 
 
